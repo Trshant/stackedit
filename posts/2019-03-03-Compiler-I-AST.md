@@ -1,6 +1,6 @@
 ---
 title: "Building a compiler-part1 AST"
-date: 2019-03-03T19:00:00+05:30
+date: 2019-03-02T19:00:00+05:30
 draft: false
 tags : [CompSci,compilerTheory,AST]
 Description : "Building your own compiler (Part 1)"
@@ -111,5 +111,5 @@ The next post in this series will be the implementation of this in Typescript.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MDc2MzE0OF19
+eyJoaXN0b3J5IjpbLTM2NjM3MDQyMSwxNTgwNzYzMTQ4XX0=
 -->

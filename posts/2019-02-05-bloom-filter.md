@@ -37,11 +37,13 @@ console.log(" Final hash : ",oredhash); // 4278103935
 ```
 This is our Masterhash.
 
-Now we need to create a few more hashes to check against the master hash. 
+Now we create a few more hashes to check against the master hash.  we will create hashes for 2 strings, one of which is known to us and calclulated in the masterhash.
+
 ```javascript
 var  hash3  =  murmurHash('not me!') >>>  0
 console.log(hash3); //1542629515
 
+// The Familiar one 
 var  hash4  =  murmurHash('do me too') >>>  0
 console.log(hash4); // 3728646459
 ```
@@ -125,5 +127,5 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMzAyNTI2NSwxOTA4NDQ3NjM0XX0=
+eyJoaXN0b3J5IjpbMTU3MTA5OTQyOCwxOTA4NDQ3NjM0XX0=
 -->

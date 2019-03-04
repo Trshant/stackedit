@@ -48,7 +48,7 @@ var  hash4  =  murmurHash('do me too') >>>  0
 console.log(hash4); // 3728646459
 ```
 
- Now we need to check if the bits are set both in the individual hash as well as the master hash.
+ Now we need to check if the bits are set both in the individual hash as well as the master hash. Coding it up.....
  ```javascript
 function  checkTheHashes( masterHash , hashToCheck ){
 	var  check  = (masterHash  &  hashToCheck) >>>  0;
@@ -61,14 +61,14 @@ function  checkTheHashes( masterHash , hashToCheck ){
 }
  ```
 
-checking the hashes...
+Lets running the 
 ```javascript
 check  =  checkTheHashes(oredhash, hash3);
 console.log(" checking hash \"not me!\" (should be false) : ",check); // false
 check  =  checkTheHashes(oredhash, hash4);
 console.log(" checking hash \"do me too\" (should be true): ",check); // true
 ```
-Now since i know it works, let me put it all in a class, so I dont pollute the global namespace.
+Now since i know it works, let me do the responsible thing and put it all in a class, so I dont pollute the global namespace.
 ```javascript
 var bloomFilter = {
 	masterHash : null,
@@ -127,5 +127,5 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MTA5OTQyOCwxOTA4NDQ3NjM0XX0=
+eyJoaXN0b3J5IjpbMjExNjU3NTAyMCwxOTA4NDQ3NjM0XX0=
 -->

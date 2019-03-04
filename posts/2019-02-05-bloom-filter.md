@@ -35,9 +35,9 @@ var  oredhash  =  hash  >>>  0  |  hash2  >>>  0 ;
 oredhash  =  oredhash  >>>  0;
 console.log(" Final hash : ",oredhash); // 4278103935
 ```
-This is our Masterhash. The string 10-digit logn string holds as many strings as we can give it. 
+This is our Masterhash. The 10-digit long string holds as many strings as we can give it. 
 
-Now we create a few more hashes to check against the master hash.  we will create hashes for 2 strings, one of which is known to us and calclulated in the masterhash.
+Now we create a few more hashes to check against the master hash.  we will create hashes for 2 strings, one of which is known to us and calculated in the masterhash. the other one will be an unfamiliar one.
 
 ```javascript
 var  testHash1  =  murmurHash('not me!') >>>  0
@@ -103,6 +103,7 @@ As we can see, it is quite useful for
 1. checking uniqueness : where the answer for the `checkIfPresent` function is expected to be false.
 2.  availability of the data: where the answer for the `checkIfPresent` function is expected to be true.
 
+More than that, we can see how much time and data it has saved us.
 
 ---
 As we are concerned with syncing data between the server and client.
@@ -139,6 +140,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzExNjMzLDIxMTY1NzUwMjAsMTkwOD
-Q0NzYzNF19
+eyJoaXN0b3J5IjpbLTIwMzAxNjAwNzQsMjExNjU3NTAyMCwxOT
+A4NDQ3NjM0XX0=
 -->

@@ -129,7 +129,9 @@ The strategy for the maintaining the masterhash could be:
 SELECT * FROM table_name HAVING hash_field_value & CMH <> hash_field_value
 ```  
 
-The above SQL will return only those rows from the tablename which are not present in the client system or which have no updated in the client system.
+The above SQL will return only those rows from the tablename which 
+1. Are not present in the client system 
+2. Updated rows which have not been synced yet with the client system.
 
 
 ---
@@ -140,6 +142,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NTYzMjM3MywtMjAzMDE2MDA3NCwyMT
+eyJoaXN0b3J5IjpbLTQyODI5OTcxNSwtMjAzMDE2MDA3NCwyMT
 E2NTc1MDIwLDE5MDg0NDc2MzRdfQ==
 -->

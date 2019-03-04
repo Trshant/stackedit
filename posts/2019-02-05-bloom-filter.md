@@ -40,12 +40,12 @@ This is our Masterhash.
 Now we create a few more hashes to check against the master hash.  we will create hashes for 2 strings, one of which is known to us and calclulated in the masterhash.
 
 ```javascript
-var  hash3  =  murmurHash('not me!') >>>  0
-console.log(hash3); //1542629515
+var  testHash1  =  murmurHash('not me!') >>>  0
+console.log(testHash1); //1542629515
 
 // The Familiar one 
-var  hash4  =  murmurHash('do me too') >>>  0
-console.log(hash4); // 3728646459
+var  testHash2  =  murmurHash('do me too') >>>  0
+console.log(testHash2); // 3728646459
 ```
 
  Now we need to check if the bits are set both in the individual hash as well as the master hash. Coding it up.....
@@ -61,7 +61,7 @@ function  checkTheHashes( masterHash , hashToCheck ){
 }
  ```
 
-Lets running the function  
+Lets run the function against the 2 hashes we created for checking against  
 ```javascript
 check  =  checkTheHashes(oredhash, hash3);
 console.log(" checking hash \"not me!\" (should be false) : ",check); // false
@@ -133,6 +133,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDUwODEyOTUsMjExNjU3NTAyMCwxOT
-A4NDQ3NjM0XX0=
+eyJoaXN0b3J5IjpbMTYzODgxNjQzLDIxMTY1NzUwMjAsMTkwOD
+Q0NzYzNF19
 -->

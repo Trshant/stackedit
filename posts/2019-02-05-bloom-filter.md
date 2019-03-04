@@ -61,7 +61,7 @@ function  checkTheHashes( masterHash , hashToCheck ){
 }
  ```
 
-Lets running the 
+Lets running the function  
 ```javascript
 check  =  checkTheHashes(oredhash, hash3);
 console.log(" checking hash \"not me!\" (should be false) : ",check); // false
@@ -112,10 +112,11 @@ Server ->> Client: There you go....
 Client ->> Client : Updates Itself
 ```
 
-However, the server itself consists of 2 parts. the web server and the database server. The strategy for the code hashing should be:
+However, the server itself consists of 2 parts. the web server and the database server. 
+The strategy for the maintaining the masterhash could be:
 1.  Update the hash probably in a field in the same table. or a linked one.
 2.  Continuously update the master hash with each insert or update.
-3.  Periodically refresh the masterhash to ensure the deleted data a.  
+3.  Periodically refresh the masterhash ( use a Cron! ) to ensure the deleted data also is reflected in the masterhash.
 
 ```SQL  
 SELECT * FROM table_name HAVING hash_field_value & CMH <> hash_field_value
@@ -132,6 +133,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3NTMxNjI0LDIxMTY1NzUwMjAsMTkwOD
-Q0NzYzNF19
+eyJoaXN0b3J5IjpbLTE2NDUwODEyOTUsMjExNjU3NTAyMCwxOT
+A4NDQ3NjM0XX0=
 -->

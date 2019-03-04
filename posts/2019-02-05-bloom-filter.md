@@ -131,7 +131,7 @@ SELECT * FROM table_name HAVING hash_field_value & CMH <> hash_field_value
 
 The above SQL will return only those rows from the tablename which 
 1. Are not present in the client system 
-2. Updated rows which have not been synced yet with the client system.
+2. Updated rows in the server which have yet  been synced with the client system.
 
 
 ---
@@ -142,6 +142,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODI5OTcxNSwtMjAzMDE2MDA3NCwyMT
+eyJoaXN0b3J5IjpbLTEzMzM0ODE2NywtMjAzMDE2MDA3NCwyMT
 E2NTc1MDIwLDE5MDg0NDc2MzRdfQ==
 -->

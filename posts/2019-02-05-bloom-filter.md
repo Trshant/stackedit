@@ -93,7 +93,9 @@ var bloomFilter = {
 ``` 
 I am going to use this class later.
 
-As we can see, it is quite useful for checking uniqueness and availability of the data, depending on the answer expected is positive or negative.
+As we can see, it is quite useful for 
+1. checking uniqueness : where the answer for the `checkIfPresent` function is expected to be false.
+2.  availability of the data: where the answer for the `checkIfPresent` is expected to be
 
 
 ---
@@ -127,5 +129,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjU3NTAyMCwxOTA4NDQ3NjM0XX0=
+eyJoaXN0b3J5IjpbMTcxNzU5NTc5MiwyMTE2NTc1MDIwLDE5MD
+g0NDc2MzRdfQ==
 -->

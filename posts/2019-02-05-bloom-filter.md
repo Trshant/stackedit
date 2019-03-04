@@ -134,6 +134,7 @@ The above SQL will return only those rows from the tablename which
 2. Updated rows in the server which have yet  been synced with the client system.
 
 
+
 ---
 
 
@@ -142,6 +143,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM0ODE2NywtMjAzMDE2MDA3NCwyMT
-E2NTc1MDIwLDE5MDg0NDc2MzRdfQ==
+eyJoaXN0b3J5IjpbLTEyOTY1NDEwNDUsLTEzMzM0ODE2NywtMj
+AzMDE2MDA3NCwyMTE2NTc1MDIwLDE5MDg0NDc2MzRdfQ==
 -->

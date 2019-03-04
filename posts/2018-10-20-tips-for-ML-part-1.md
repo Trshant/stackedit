@@ -25,5 +25,5 @@ Post this, we can do a predict and see how the model behaves.
 Have a look at this repo's 2 pages to see what i did using the above code.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NTY5Mjk4NF19
+eyJoaXN0b3J5IjpbLTE0NjU4ODU5NjIsMTA2NTY5Mjk4NF19
 -->

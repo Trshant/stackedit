@@ -95,7 +95,7 @@ I am going to use this class later.
 
 As we can see, it is quite useful for 
 1. checking uniqueness : where the answer for the `checkIfPresent` function is expected to be false.
-2.  availability of the data: where the answer for the `checkIfPresent` is expected to be
+2.  availability of the data: where the answer for the `checkIfPresent` function is expected to be true.
 
 
 ---
@@ -129,6 +129,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNzU5NTc5MiwyMTE2NTc1MDIwLDE5MD
+eyJoaXN0b3J5IjpbLTcyOTQwMzUyMCwyMTE2NTc1MDIwLDE5MD
 g0NDc2MzRdfQ==
 -->

@@ -63,10 +63,14 @@ function  checkTheHashes( masterHash , hashToCheck ){
 
 Lets run the function against the 2 hashes we created for checking against :
 
-The `testHash1` should give a false since the data is not present in the 
+The `testHash1` should give a false since the data is not present in the masterhash
 ```javascript
 check  =  checkTheHashes(oredhash, testHash1);
 console.log(" checking hash \"not me!\" (should be false) : ",check); // false
+```
+
+The `testHash2` should give a true s
+```javascript
 check  =  checkTheHashes(oredhash, testHash2);
 console.log(" checking hash \"do me too\" (should be true): ",check); // true
 ```
@@ -135,6 +139,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMjkzOTU0LDIxMTY1NzUwMjAsMTkwOD
+eyJoaXN0b3J5IjpbMjAzMDU4NDI0LDIxMTY1NzUwMjAsMTkwOD
 Q0NzYzNF19
 -->

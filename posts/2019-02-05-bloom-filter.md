@@ -35,7 +35,7 @@ var  oredhash  =  hash  >>>  0  |  hash2  >>>  0 ;
 oredhash  =  oredhash  >>>  0;
 console.log(" Final hash : ",oredhash); // 4278103935
 ```
-This is our Masterhash.
+This is our Masterhash. The string 10-digit logn string holds as many strings as we can give it. 
 
 Now we create a few more hashes to check against the master hash.  we will create hashes for 2 strings, one of which is known to us and calclulated in the masterhash.
 
@@ -63,13 +63,13 @@ function  checkTheHashes( masterHash , hashToCheck ){
 
 Lets run the function against the 2 hashes we created for checking against :
 
-The `testHash1` should give a false since the data is not present in the masterhash
+The `testHash1` should give a false since the data is not present in the masterhash:
 ```javascript
 check  =  checkTheHashes(oredhash, testHash1);
 console.log(" checking hash \"not me!\" (should be false) : ",check); // false
 ```
 
-The `testHash2` should give a true s
+The `testHash2` should give a true since the data is not present in the masterhash:
 ```javascript
 check  =  checkTheHashes(oredhash, testHash2);
 console.log(" checking hash \"do me too\" (should be true): ",check); // true
@@ -139,6 +139,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMDU4NDI0LDIxMTY1NzUwMjAsMTkwOD
+eyJoaXN0b3J5IjpbMjAzMzExNjMzLDIxMTY1NzUwMjAsMTkwOD
 Q0NzYzNF19
 -->

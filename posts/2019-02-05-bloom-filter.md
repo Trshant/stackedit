@@ -133,16 +133,14 @@ The above SQL will return only those rows from the tablename which
 1. Are not present in the client system 
 2. Updated rows in the server which have yet  been synced with the client system.
 
-
+The syncing happens recursively till both the systems have the same Masterhash. I will be elaborating on that in a future post.
 
 ---
-
-
 Some reading:
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTY1NDEwNDUsLTEzMzM0ODE2NywtMj
-AzMDE2MDA3NCwyMTE2NTc1MDIwLDE5MDg0NDc2MzRdfQ==
+eyJoaXN0b3J5IjpbLTc0MDY4NDgxOCwtMTMzMzQ4MTY3LC0yMD
+MwMTYwMDc0LDIxMTY1NzUwMjAsMTkwODQ0NzYzNF19
 -->

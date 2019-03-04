@@ -61,11 +61,13 @@ function  checkTheHashes( masterHash , hashToCheck ){
 }
  ```
 
-Lets run the function against the 2 hashes we created for checking against  
+Lets run the function against the 2 hashes we created for checking against :
+
+The `testHash1` should give a false since the data is not present in the 
 ```javascript
-check  =  checkTheHashes(oredhash, hash3);
+check  =  checkTheHashes(oredhash, testHash1);
 console.log(" checking hash \"not me!\" (should be false) : ",check); // false
-check  =  checkTheHashes(oredhash, hash4);
+check  =  checkTheHashes(oredhash, testHash2);
 console.log(" checking hash \"do me too\" (should be true): ",check); // true
 ```
 Now since i know it works, let me do the responsible thing and put it all in a class, so I dont pollute the global namespace.
@@ -133,6 +135,6 @@ Some reading:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODgxNjQzLDIxMTY1NzUwMjAsMTkwOD
+eyJoaXN0b3J5IjpbMjEzMjkzOTU0LDIxMTY1NzUwMjAsMTkwOD
 Q0NzYzNF19
 -->

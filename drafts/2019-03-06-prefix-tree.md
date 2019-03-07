@@ -51,7 +51,7 @@ class tree {
     }
     addToTree(StringOrNumber){
         string_to_store.split('').forEach(function (element, index) {
-	    var oldNode = previous_node.searchNode(element);
+	    var oldNode = previous_node.searchChildNodes(element);
             if( oldNode == null ){
                 var newNode = new node(element, previous_node);
                 stored_nodes.push(newNode);
@@ -65,7 +65,7 @@ class tree {
 Now we have written this, but we dont have the function `searchNode` in the node class. So we will need to code that up.
 
 ```typescript
-searchNode(value){
+searchChildNodes(value){
 	this.childNodes.forEach(function(element,index){
 		if( element.value == value ){
 			return element;
@@ -76,6 +76,6 @@ searchNode(value){
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5NzU1Nzc4LC02MTQyMTA5OTUsLTk0Nj
-E4NjQzOV19
+eyJoaXN0b3J5IjpbLTI5Mjg2NDY3NiwtNjE0MjEwOTk1LC05ND
+YxODY0MzldfQ==
 -->

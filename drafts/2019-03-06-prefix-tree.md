@@ -51,16 +51,20 @@ class tree {
     }
     addToTree(StringOrNumber){
         string_to_store.split('').forEach(function (element, index) {
-	    previous_node.searchNode();
-            var newNode = new node(element, previous_node);
-            stored_nodes.push(newNode);
-            previous_node = newNode;
+	    var oldNode = previous_node.searchNode();
+            if( oldNode == null ){
+                var newNode = new node(element, previous_node);
+                stored_nodes.push(newNode);
+                previous_node = newNode;
+            }
+            previous_node = oldNode;
        })
     }
 }
 ```
+Now we have written this, but we dont have the function `searchNode` in the n
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NjYzODY4NCwtNjE0MjEwOTk1LC05ND
+eyJoaXN0b3J5IjpbMjEyMjQwNDEwNiwtNjE0MjEwOTk1LC05ND
 YxODY0MzldfQ==
 -->

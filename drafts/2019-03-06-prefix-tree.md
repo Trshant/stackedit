@@ -43,22 +43,27 @@ console.log(stored_nodes);
 ```
 Now lets define a tree as a class.
 ```typescript
-//TODO : 
-class tree {
-    constructor() {
-        this.mother_node   = new node(null, null);
-        this.previous_node = mother_node;
+class prefix_tree {
+    mother_node: any;
+    previous_node: any;
+    stored_nodes: any[];
+    constructor(value) {
+        this.mother_node = new node(null, null);
+        this.previous_node = this.mother_node;
+        this.stored_nodes = [];
     }
-    addToTree(StringOrNumber){
-        string_to_store.split('').forEach(function (element, index) {
-	    var oldNode = previous_node.searchChildNodes(element);
-            if( oldNode == null ){
-                var newNode = new node(element, previous_node);
-                stored_nodes.push(newNode);
-                previous_node = newNode;
-            }
-            previous_node = oldNode;
-       })
+    addToTree(StringOrNumber) {
+        for (var element of StringOrNumber.split('')) {
+            console.log(element, this.previous_node ) ;
+            var oldNode = this.previous_node.searchChildNodes(element);
+            if (oldNode == null) {
+                var newNode = new node(element, this.previous_node);
+                this.stored_nodes.push(newNode);
+                this.previous_node = newNode;
+            } else {
+                this.previous_node = oldNode;
+            }   
+        }
     }
 }
 ```
@@ -74,9 +79,37 @@ searchChildNodes(valueToSearch) {
     return  null;
 }
 ```
+The complete `Node` class definition looks like this now:
+```typescript
+class node {
+    value: number | string | null;
+    childNodes: NameOrNameArray;
+    constructor(value, parentNode) {
+        this.value = value;
+        this.childNodes = [];
+        if (parentNode != null) {
+            parentNode.addChild(this);
+        }
+    }
+    addChild(childNode) {
+        this.childNodes.push(childNode);
+    }
+    searchChildNodes(valueToSearch) {
+        for (var element of this.childNodes) {
+            if ( element.value == valueToSearch) {
+                return element;
+            }
+            
+        }
+        return null;
+    }
+}
+```
+Testing it all together:
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5ODcyMzkwMiwtMjkyODY0Njc2LC02MT
+eyJoaXN0b3J5IjpbLTczNjA3ODY3NCwtMjkyODY0Njc2LC02MT
 QyMTA5OTUsLTk0NjE4NjQzOV19
 -->

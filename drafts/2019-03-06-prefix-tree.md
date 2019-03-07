@@ -46,20 +46,20 @@ Now lets define a tree as a class.
 //TODO : 
 class tree {
     constructor() {
-        this.mother_node = new node(null, null);
-        var previous_node = mother_node;
+        this.mother_node   = new node(null, null);
+        this.previous_node = mother_node;
     }
     addToTree(StringOrNumber){
         string_to_store.split('').forEach(function (element, index) {
-    var newNode = new node(element, previous_node);
+          var newNode = new node(element, previous_node);
     stored_nodes.push(newNode);
     previous_node = newNode;
-})
+       })
     }
 }
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTkwMTI3NSwtNjE0MjEwOTk1LC05ND
+eyJoaXN0b3J5IjpbLTI1NTcyODYzMiwtNjE0MjEwOTk1LC05ND
 YxODY0MzldfQ==
 -->

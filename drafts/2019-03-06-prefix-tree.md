@@ -106,10 +106,12 @@ class node {
 }
 ```
 Testing it all together:
+```typescript
 
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjA3ODY3NCwtMjkyODY0Njc2LC02MT
+eyJoaXN0b3J5IjpbMTU4MDk3NDIzMSwtMjkyODY0Njc2LC02MT
 QyMTA5OTUsLTk0NjE4NjQzOV19
 -->

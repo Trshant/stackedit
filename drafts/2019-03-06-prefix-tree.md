@@ -51,15 +51,16 @@ class tree {
     }
     addToTree(StringOrNumber){
         string_to_store.split('').forEach(function (element, index) {
-          var newNode = new node(element, previous_node);
-    stored_nodes.push(newNode);
-    previous_node = newNode;
+	    previous_node.searchNode();
+            var newNode = new node(element, previous_node);
+            stored_nodes.push(newNode);
+            previous_node = newNode;
        })
     }
 }
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NTcyODYzMiwtNjE0MjEwOTk1LC05ND
+eyJoaXN0b3J5IjpbLTI3NjYzODY4NCwtNjE0MjEwOTk1LC05ND
 YxODY0MzldfQ==
 -->

@@ -48,12 +48,12 @@ class tree {
     constructor() {
         this.mother_node = new node(null, null);
     }
-    addToTree(value){
+    addToTree(stringOrNumbe){
         
     }
 }
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NjE4NjQzOV19
+eyJoaXN0b3J5IjpbMTE2ODQ4NjU1NywtOTQ2MTg2NDM5XX0=
 -->

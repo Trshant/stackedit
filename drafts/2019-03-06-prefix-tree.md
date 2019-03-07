@@ -53,6 +53,7 @@ class prefix_tree {
         this.stored_nodes = [];
     }
     addToTree(StringOrNumber) {
+        this.previous_node = this.mother_node;
         for (var element of StringOrNumber.split('')) {
             console.log(element, this.previous_node ) ;
             var oldNode = this.previous_node.searchChildNodes(element);
@@ -105,13 +106,17 @@ class node {
     }
 }
 ```
+
 Testing it all together:
 ```typescript
-
+var  trie  =  new  prefix_tree(null);
+trie.addToTree("to");
+trie.addToTree("tea");
+console.log(trie.stored_nodes);
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MDk3NDIzMSwtMjkyODY0Njc2LC02MT
+eyJoaXN0b3J5IjpbLTEzMDkxNTU1NCwtMjkyODY0Njc2LC02MT
 QyMTA5OTUsLTk0NjE4NjQzOV19
 -->

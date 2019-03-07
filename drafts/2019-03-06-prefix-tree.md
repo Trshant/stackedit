@@ -66,11 +66,16 @@ Now we have written this, but we dont have the function `searchNode` in the node
 
 ```typescript
 searchNode(value){
-	this.childNodes.
+	this.childNodes.forEach(function(element,index){
+		if( element.value == value ){
+			return element;
+		}
+	});
+	return null;
 }
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM3NTU1NjU2LC02MTQyMTA5OTUsLTk0Nj
+eyJoaXN0b3J5IjpbNDQ5NzU1Nzc4LC02MTQyMTA5OTUsLTk0Nj
 E4NjQzOV19
 -->

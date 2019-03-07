@@ -62,20 +62,21 @@ class tree {
     }
 }
 ```
-Now we have written this, but we dont have the function `searchNode` in the node class. So we will need to code that up.
+Now we have written this, but we dont have the function `searchChildNodes` in the node class. So we will need to code that up.
 
 ```typescript
-searchChildNodes(value){
-	this.childNodes.forEach(function(element,index){
-		if( element.value == value ){
-			return element;
-		}
-	});
-	return null;
+searchChildNodes(valueToSearch) {
+    for (var  element  of  this.childNodes) {
+        if ( element.value  ==  valueToSearch) {
+            return  element;
+        }
+    }
+    return  null;
 }
 ```
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5Mjg2NDY3NiwtNjE0MjEwOTk1LC05ND
-YxODY0MzldfQ==
+eyJoaXN0b3J5IjpbMTc5ODcyMzkwMiwtMjkyODY0Njc2LC02MT
+QyMTA5OTUsLTk0NjE4NjQzOV19
 -->

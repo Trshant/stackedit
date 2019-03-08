@@ -134,9 +134,22 @@ searchInTree(StringOrNumber) {
     return true;
 }
 ```
+Testing this
+```typescript
+var trie = new prefix_tree(null);
+trie.addToTree("to");
+trie.addToTree("tea");
+console.log(trie.stored_nodes);
+reply = trie.searchInTree("toe");
+console.log(reply); // false
+reply = trie.searchInTree("to");
+console.log(reply); // true
+```
+
+And so, we have ourselves a trie. Do check out the code in the 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDE0MDYyMywtMTQzMTU4NDkxMCwtMT
-MwOTE1NTU0LC0yOTI4NjQ2NzYsLTYxNDIxMDk5NSwtOTQ2MTg2
-NDM5XX0=
+eyJoaXN0b3J5IjpbLTIxMjg0MTg3MTAsLTE0MzE1ODQ5MTAsLT
+EzMDkxNTU1NCwtMjkyODY0Njc2LC02MTQyMTA5OTUsLTk0NjE4
+NjQzOV19
 -->

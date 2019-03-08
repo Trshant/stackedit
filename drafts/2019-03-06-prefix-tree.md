@@ -146,10 +146,10 @@ reply = trie.searchInTree("to");
 console.log(reply); // true
 ```
 
-And so, we have ourselves a trie. Do check out the code in the 
+And so, we have ourselves a trie. Do check out the code in github. or you can play with it
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjg0MTg3MTAsLTE0MzE1ODQ5MTAsLT
-EzMDkxNTU1NCwtMjkyODY0Njc2LC02MTQyMTA5OTUsLTk0NjE4
-NjQzOV19
+eyJoaXN0b3J5IjpbLTM3NzE1NDg0NywtMTQzMTU4NDkxMCwtMT
+MwOTE1NTU0LC0yOTI4NjQ2NzYsLTYxNDIxMDk5NSwtOTQ2MTg2
+NDM5XX0=
 -->

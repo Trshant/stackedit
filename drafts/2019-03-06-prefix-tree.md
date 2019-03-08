@@ -116,8 +116,27 @@ console.log(trie.stored_nodes);
 ```
 You can play around with [this](https://www.typescriptlang.org/play/#src=type%20NameOrNameArray%20%3D%20number%5B%5D%20%7C%20string%5B%5D%3B%0D%0A%0D%0Aclass%20node%20%7B%0D%0A%20%20%20%20value%3A%20number%20%7C%20string%20%7C%20null%3B%0D%0A%20%20%20%20childNodes%3A%20NameOrNameArray%3B%0D%0A%20%20%20%20constructor(value%2C%20parentNode)%20%7B%0D%0A%20%20%20%20%20%20%20%20this.value%20%3D%20value%3B%0D%0A%20%20%20%20%20%20%20%20this.childNodes%20%3D%20%5B%5D%3B%0D%0A%20%20%20%20%20%20%20%20if%20(parentNode%20!%3D%20null)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20parentNode.addChild(this)%3B%0D%0A%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%7D%0D%0A%20%20%20%20addChild(childNode)%20%7B%0D%0A%20%20%20%20%20%20%20%20this.childNodes.push(childNode)%3B%0D%0A%20%20%20%20%7D%0D%0A%20%20%20%20searchChildNodes(valueToSearch)%20%7B%0D%0A%20%20%20%20%20%20%20%20for%20(var%20element%20of%20this.childNodes)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(element.value%20%3D%3D%20valueToSearch)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20return%20element%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%0D%0A%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20return%20null%3B%0D%0A%20%20%20%20%7D%0D%0A%7D%0D%0A%0D%0Aclass%20prefix_tree%20%7B%0D%0A%20%20%20%20mother_node%3A%20any%3B%0D%0A%20%20%20%20previous_node%3A%20any%3B%0D%0A%20%20%20%20stored_nodes%3A%20any%5B%5D%3B%0D%0A%20%20%20%20constructor(value)%20%7B%0D%0A%20%20%20%20%20%20%20%20this.mother_node%20%3D%20new%20node(null%2C%20null)%3B%0D%0A%20%20%20%20%20%20%20%20this.previous_node%20%3D%20this.mother_node%3B%0D%0A%20%20%20%20%20%20%20%20this.stored_nodes%20%3D%20%5B%5D%3B%0D%0A%20%20%20%20%20%20%20%20%2F%2Fconsole.log(this.previous_node%2C%20this.mother_node)%3B%0D%0A%20%20%20%20%7D%0D%0A%20%20%20%20addToTree(StringOrNumber)%20%7B%0D%0A%20%20%20%20%20%20%20%20this.previous_node%20%3D%20this.mother_node%3B%0D%0A%20%20%20%20%20%20%20%20for%20(var%20element%20of%20StringOrNumber.split(''))%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20console.log(element%2C%20this.previous_node%20)%20%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20var%20oldNode%20%3D%20this.previous_node.searchChildNodes(element)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(oldNode%20%3D%3D%20null)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20var%20newNode%20%3D%20new%20node(element%2C%20this.previous_node)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20this.stored_nodes.push(newNode)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20this.previous_node%20%3D%20newNode%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20this.previous_node%20%3D%20oldNode%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20%20%20%0D%0A%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%7D%0D%0A%7D%0D%0A%0D%0Avar%20trie%20%3D%20new%20prefix_tree(null)%3B%0D%0Atrie.addToTree(%22to%22)%3B%0D%0Atrie.addToTree(%22tea%22)%3B%0D%0Aconsole.log(trie.stored_nodes)%3B%0D%0A) at the [typescript playground](https://www.typescriptlang.org/play/).
 
+However, our work is not done yet. We need to implement a way to search the trie for our data. 
+Here we go:
+```typescript
+searchInTree(StringOrNumber) {
+    this.previous_node = this.mother_node;
+    for (var element of StringOrNumber.split('')) {
+        var oldNode = this.previous_node.searchChildNodes(element);
+        if (oldNode == null) {
+            return false;
+        }
+    }
+    var oldNode = this.previous_node.searchChildNodes(null);
+    if (oldNode == null) {
+        return false;
+    }
+    return true;
+}
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE1ODQ5MTAsLTEzMDkxNTU1NCwtMj
-kyODY0Njc2LC02MTQyMTA5OTUsLTk0NjE4NjQzOV19
+eyJoaXN0b3J5IjpbLTg4NDE0MDYyMywtMTQzMTU4NDkxMCwtMT
+MwOTE1NTU0LC0yOTI4NjQ2NzYsLTYxNDIxMDk5NSwtOTQ2MTg2
+NDM5XX0=
 -->

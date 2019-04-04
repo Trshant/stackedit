@@ -5,11 +5,6 @@ notes quick
 Daily todos 
 - [x] get shot for passport photos
 - [ ] reading list for analytics
-- [ ] clear bed
-- [ ] clear headboard
-- [ ] clear make up cupboard
-- [ ] buy veggies
-- [ ] buy trulife
 - [ ] 
 
 Blogging @blog +AWS
@@ -25,7 +20,7 @@ finished tasks
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTg3NDc0NCwxNjUxNzU4NjY0LC05OT
-YzMjIyMywxMzI3ODIxMTc5LC0yOTk4MTgyNzAsMTk4NzE4Nzgz
-NV19
+eyJoaXN0b3J5IjpbLTE0OTk1OTU1NTQsMjEwNTg3NDc0NCwxNj
+UxNzU4NjY0LC05OTYzMjIyMywxMzI3ODIxMTc5LC0yOTk4MTgy
+NzAsMTk4NzE4NzgzNV19
 -->

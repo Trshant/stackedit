@@ -16,9 +16,11 @@ First i downloaded Docker and Docker-compose. I followed the official setup and 
     
   Post that i read up on Docker-compose and realised I better get started with writing a YAML file to detail out all the details. This has been carefully [commented](https://gist.github.com/Trshant/e06bebd178915a7a025339c4bd5e5d94#file-docker-compose-yml)) and i hope that the comments are good enough explanation.  
   
-  Then all i needed to do was go over to that directory and do a `sudo docker-compose build` and post that 
+  Then all i needed to do was go over to that directory and do a `sudo docker-compose build` and post that `sudo docker-compose up`.
+  
+  Cheers! :beers:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ5MDQ1OTk0LDE0NjI0OTM0ODBdfQ==
+eyJoaXN0b3J5IjpbNzQ3MTY1NzkzLDE0NjI0OTM0ODBdfQ==
 -->

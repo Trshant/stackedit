@@ -5,10 +5,10 @@ draft: true
 tags : [programming , softwareEngineering , docker , LAMP ]
 Description : "A note on how i started using docker for LAMP development"
 ---
-Following [A note on docker](https://trshant.dev/2019/01/27/A-note-on-docker.html), i decided to get a LAMP setp up using only docker. However to my fright, i procastinated for almost 3 months before the urge became too much to fight and i gave in and wanted to fight the good fight :stuck_out_tongue:. 
+Following [A note on docker](https://trshant.dev/2019/01/27/A-note-on-docker.html), i decided to get a LAMP setp up using only docker. However, I procastinated for almost 3 months before the urge became too much to fight and i gave in and wanted to fight the good fight :stuck_out_tongue:. 
 Anyway, this post took almost 5 days to get done. so let us get to it.
 
-First i downloaded Docker and Docker-compose. i followed the official setup and finally got everything working. Docker-compose took a day to get installed properly, but it was mostly a badly installed python distribution that was causing the issue.  
+First i downloaded Docker and Docker-compose. I followed the official setup and finally got everything working. Docker-compose took a day to get installed properly, but it was mostly a badly installed python distribution that was causing the issue.  
   
   Once that was done, i created a folder and put in 2 files in it. Dockerfile and docker-compose.yml. its linked in the link to the gist and you will be done. However, coming up with the exact file took a fair bit of time - in my case, almost 3 days.  
   
@@ -24,5 +24,5 @@ First i downloaded Docker and Docker-compose. i followed the official setup and 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjQ5MzQ4MF19
+eyJoaXN0b3J5IjpbMTg0NzkzMzYwNywxNDYyNDkzNDgwXX0=
 -->

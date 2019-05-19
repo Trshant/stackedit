@@ -10,13 +10,18 @@ In short, what i did was follow [Daniel Simmons's](https://medium.freecodecamp.o
   
 First i googled the code to benchmark the code and ended up at a [stackoverflow](https://stackoverflow.com/questions/4784745/how-can-i-measure-the-execution-time-of-a-script) post.
 ```javascript
-
+function  time_my_script(script) {
+	var  start  =  new  Date();
+	script();
+	return  new  Date() -  start;
+}
 ```
+So the native javascri
   
 
 In conclusion, i agree with [Lemire's](https://lemire.me/blog/2018/10/23/is-webassembly-faster-than-javascript/) conclusions and think that well written javascript will be faster than webassembly at this moment, May 2019.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMxNzIwMjUwLDIwODM3ODM0MjQsLTEzOT
-Y0Mzc0MjQsLTg2OTc1Mjg4MF19
+eyJoaXN0b3J5IjpbLTgwNTE3MTczOSwyMDgzNzgzNDI0LC0xMz
+k2NDM3NDI0LC04Njk3NTI4ODBdfQ==
 -->

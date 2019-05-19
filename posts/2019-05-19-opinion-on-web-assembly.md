@@ -16,12 +16,17 @@ function  time_my_script(script) {
 	return  new  Date() -  start;
 }
 ```
-So the native javascri
-  
+The native javascript written to check the webassembly version was:
+```javascript
+function  js_squarer(num) {
+	return  num  *  num;
+}
+``` 
+ 
 
 In conclusion, i agree with [Lemire's](https://lemire.me/blog/2018/10/23/is-webassembly-faster-than-javascript/) conclusions and think that well written javascript will be faster than webassembly at this moment, May 2019.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNTE3MTczOSwyMDgzNzgzNDI0LC0xMz
+eyJoaXN0b3J5IjpbLTIwMDc2ODE5MywyMDgzNzgzNDI0LC0xMz
 k2NDM3NDI0LC04Njk3NTI4ODBdfQ==
 -->

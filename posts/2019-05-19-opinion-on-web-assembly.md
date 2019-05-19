@@ -24,8 +24,11 @@ function  js_squarer(num) {
 ``` 
 I found that the native javascript version was consistently 3 times faster than the webassembly version. This lack of speed makes it clear to me that WA is not yet matured enough to be considered to replace JS in web development projects. However it can and will play a huge part in porting legacy projects to the web interface.   
 I agree with [Lemire's](https://lemire.me/blog/2018/10/23/is-webassembly-faster-than-javascript/) conclusions and think that well written javascript will be faster than webassembly at this moment, May 2019.
+
+Please find the complete code i used to check WA.  
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDgyNDYxNCwtNTE1NjI4NzQxLDIwOD
+eyJoaXN0b3J5IjpbMTAwMjU0Nzg2OSwtNTE1NjI4NzQxLDIwOD
 M3ODM0MjQsLTEzOTY0Mzc0MjQsLTg2OTc1Mjg4MF19
 -->

@@ -22,11 +22,10 @@ function  js_squarer(num) {
 	return  num  *  num;
 }
 ``` 
- 
-
+I found that the native javascript version was consistently 3 times faster than the webassembly version. This lack of speed makes it clear to me that 
 In conclusion, i agree with [Lemire's](https://lemire.me/blog/2018/10/23/is-webassembly-faster-than-javascript/) conclusions and think that well written javascript will be faster than webassembly at this moment, May 2019.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDc2ODE5MywyMDgzNzgzNDI0LC0xMz
+eyJoaXN0b3J5IjpbMTk0NTM4ODgyOCwyMDgzNzgzNDI0LC0xMz
 k2NDM3NDI0LC04Njk3NTI4ODBdfQ==
 -->

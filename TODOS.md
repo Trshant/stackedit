@@ -3,17 +3,18 @@ notes quick
 
 -×-×-×-×-×-×-×-×-×-×-×-×
 Daily todos 
-- [x] get shot for passport photos
-- [ ] reading list for analytics
-- [ ] 
+- [ ] Learn numbers in Norsk
+- [ ] Y Combinator
+- [ ] Lamba numerals
+- [ ] Clear Home Desk
+- [ ] Clear Shelf pad
+- [ ] Sort out clothes and put some away
+- [ ] Ask about winter vehicle management
+- [ ] Drive the car for a bit in parking lot
 
 Blogging @blog +AWS
 - [ ] Using Lambdas
 - [ ] RDS
-
-personal development 
-- [ ] get content from source
-- [ ] get idf tags from content
 
 
 finished tasks

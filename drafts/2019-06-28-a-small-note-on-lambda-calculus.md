@@ -105,8 +105,8 @@ Other Interesting Reads:
 [Class notes onλC](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/1.LAMBDA-CALCULUS.html) 
 
 
-> Written with [StackEdit](https://stackedit.io/).
+> Written with [StackEdit](https://stackedit.io/) and Notable and Vim.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODMwNjA2MywtMjAxMzU5MzYxMywxNj
-ExNDI4ODE5LC0xNjQzOTEyNTk0XX0=
+eyJoaXN0b3J5IjpbLTE0MzcxNzI1MDYsLTgxODMwNjA2MywtMj
+AxMzU5MzYxMywxNjExNDI4ODE5LC0xNjQzOTEyNTk0XX0=
 -->

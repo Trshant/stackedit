@@ -27,7 +27,7 @@ Lambda calculus resolves each expression using substitution.
 
 But before we dive into that, there is something else I should go into. **Church Numerals**: Church numerals are the encoded natural numbers ( encoded using chuch encoding ). We can define a church numeral as a higher-order function which takes a single argument function as an argument and returns another single argument function.
 
-Lets see the numbers and their lambda expression equivalents:
+Let us see the numbers and their lambda expression equivalents:
 | number | Lambda expression |
 |----|------:|
 |0|λf.λx. x|
@@ -35,10 +35,10 @@ Lets see the numbers and their lambda expression equivalents:
 |2|λf.λx. f (f x)|
 |3|λf.λx. f (f (f x))|
 
-By looking at the above we can conclude that if 1 is (partially) encoded as a function of `x`, then 3 is encoded as the same function applied thrice to the same `x`. In other words we could say 'n' is encoded as a function 'f' composed 'n' times. .So if we were to write a function that would add 1 to a numeral, it would be just be applying the function one more time (or composing it one more time).    
+By looking at the above we can conclude that if 1 is (partially) encoded as a function of `x`, then 3 is encoded as the same function applied thrice to the same `x`. In other words we could say 'n' is encoded as a function 'f' composed 'n' times. So if we were to write a function that would add 1 to a numeral, it would be just be applying the function one more time (or composing it one more time).    
 > SUCC := λn.λf.λx.f (n f x)
 
-Since we have defined it, lets see how we can give the `SUCC` function `0` as the argument and see if it resolves to `1`.
+Since we have defined it, let us see how we can give the `SUCC` function `0` as the argument and see if it resolves to `1`.
 
 ```
 SUCC := (λn.λf.λx.f (n f x))(λf.λx. x)
@@ -94,7 +94,7 @@ Main References:
 [Wikipedia: Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus)  
 
 
-Links I regularly went back to when i needed some gentle explanations ( when Wikipedia got too terse for me! ):  
+Links I regularly went back to when I needed some gentle explanations ( when Wikipedia got too terse for me! ):  
 [&lambda; Calculus for dummies](http://bach.ai/lambda-calculus-for-absolute-dummies/): Amazingly well written note on Lambda Calculus.  
 [Stackoverflow answer for multiplication in lambda](https://math.stackexchange.com/a/595576)  
 
@@ -106,6 +106,6 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzODM2NjIyLC0yMDEzNTkzNjEzLDE2MT
-E0Mjg4MTksMzg1MjM4MzQ3XX0=
+eyJoaXN0b3J5IjpbLTE4Nzg5NTMzOTgsLTIwMTM1OTM2MTMsMT
+YxMTQyODgxOSwzODUyMzgzNDddfQ==
 -->

@@ -11,16 +11,7 @@ Lambda Calculus ( called **&lambda;C** from now on  ) is something that every pr
 From Wikipedia
 > Lambda calculus (also written as λ-calculus) is a formal system in mathematical logic for expressing computation based on function abstraction and application using variable binding and substitution. It is a universal model of computation that can be used to simulate any Turing machine.  
  
-But what does that mean in layman terms? Rather, what are these terms:  
-
- 1. function abstraction
- 2. variable binding 
- 2. Mathematical logic
- 2. Computation
-
-We wont directly answer these questions. but we will go through the subject in a bid to understand and eventually answer these questions.
-
-Computation is a way to express how a computer should carry out its activities. **&lambda;C** does this simply, with just 4 parts:
+**&lambda;C** expresses the process of computation simply, with just 4 parts:
  1. single letter variables
  2. parantheses ()
  3. Lambda &lambda;
@@ -115,5 +106,5 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODk5NzExMiwzODUyMzgzNDddfQ==
+eyJoaXN0b3J5IjpbMTYxMTQyODgxOSwzODUyMzgzNDddfQ==
 -->

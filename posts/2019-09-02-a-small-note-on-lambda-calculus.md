@@ -1,5 +1,5 @@
 ---
-title: "a small note on &lambda; calculus and Church Encoding"
+title: "A small note on &lambda; calculus and Church Encoding"
 date: 2019-09-02T00:01:43+05:30
 draft: false
 tags : [computation , ComputerScienceTheory , lambdaCalculus  ]  
@@ -107,6 +107,7 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/) and Notable and Vim.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NjE2MDc0NSwtODE4MzA2MDYzLC0yMD
-EzNTkzNjEzLDE2MTE0Mjg4MTksMzg1MjM4MzQ3XX0=
+eyJoaXN0b3J5IjpbMTkzODkxNTgzMSwtNzc2MTYwNzQ1LC04MT
+gzMDYwNjMsLTIwMTM1OTM2MTMsMTYxMTQyODgxOSwzODUyMzgz
+NDddfQ==
 -->

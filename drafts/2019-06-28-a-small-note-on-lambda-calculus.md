@@ -23,7 +23,7 @@ It uses these 4 parts to write expressions. Let me illustrate this with an examp
 
 In the above function ( which is an expression ), the `λy` is the head.`x(yz)` is the body ( which is an expression ) and `ab` which is an argument ( also an expression ).   
 
-
+Lambda calculus resolves each expression using substitution.
 
 But before we dive into that, there is something else I should go into. **Church Numerals**: Church numerals are the encoded natural numbers ( encoded using chuch encoding ). We can define a church numeral as a higher-order function which takes a single argument function as an argument and returns another single argument function.
 
@@ -85,7 +85,7 @@ So we see how, just by the process of resolving using substitution, we get the f
 We still have the subtraction to defined, But that will be another post - This one took quite some time to wrap my head around!
 
 Read More:  
-[&lambda; calculus in python code](http://vanderwijk.info/blog/pure-lambda-calculus-python/) : this [link](http://matt.might.net/articles/python-church-y-combinator/)
+[&lambda; calculus in python code](http://vanderwijk.info/blog/pure-lambda-calculus-python/): this [link](http://matt.might.net/articles/python-church-y-combinator/)
 will explain all the code better.
 
 
@@ -95,7 +95,7 @@ Main References:
 
 
 Links I regularly went back to when i needed some gentle explanations ( when Wikipedia got too terse for me! ):  
-[&lambda; Calculus for dummies](http://bach.ai/lambda-calculus-for-absolute-dummies/) : Amazingly well written short note on Lambda Calculus.  
+[&lambda; Calculus for dummies](http://bach.ai/lambda-calculus-for-absolute-dummies/): Amazingly well written note on Lambda Calculus.  
 [Stackoverflow answer for multiplication in lambda](https://math.stackexchange.com/a/595576)  
 
 
@@ -106,6 +106,6 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjI1NDA4NCwtMjAxMzU5MzYxMywxNj
-ExNDI4ODE5LC0xNjQzOTEyNTk0XX0=
+eyJoaXN0b3J5IjpbLTkzODM2NjIyLC0yMDEzNTkzNjEzLDE2MT
+E0Mjg4MTksLTE2NDM5MTI1OTRdfQ==
 -->

@@ -11,7 +11,7 @@ Lambda Calculus ( called **&lambda;C** from now on  ) is something that every pr
 From Wikipedia
 > Lambda calculus (also written as λ-calculus) is a formal system in mathematical logic for expressing computation based on function abstraction and application using variable binding and substitution. It is a universal model of computation that can be used to simulate any Turing machine.  
  
-**&lambda;C** expresses the process of computation simply, with just 4 parts:
+**&lambda;C** expresses the process of computation, with just 4 parts:
  1. single letter variables
  2. parantheses ()
  3. Lambda &lambda;
@@ -21,11 +21,11 @@ It uses these 4 parts to write expressions. Let me illustrate this with an examp
 
 > ( &lambda;y.x(yz) )(ab)  
 
-In the above function ( which is an expression ), the `λy` is the head.`x(yz)` is the body ( which is an expression ) and `ab` which is an argument ( also an expression ). Take some time and look at it. 
+In the above function ( which is an expression ), the `λy` is the head.`x(yz)` is the body ( which is an expression ) and `ab` which is an argument ( also an expression ).   
 
-So now, the next question is, however does it actually do its computation? Whats the process followed to do the actual computation? Its simple and we all know it: **cut and paste**!  
 
-But before we dive into that, there is something else I should go into: **Church Numerals**. Church numerals are the encoded natural numbers ( encoded using chuch encoding ). We can define a church numeral as a higher-order function which takes a single argument function as an argument and returns another single argument function.
+
+But before we dive into that, there is something else I should go into. **Church Numerals**: Church numerals are the encoded natural numbers ( encoded using chuch encoding ). We can define a church numeral as a higher-order function which takes a single argument function as an argument and returns another single argument function.
 
 Lets see the numbers and their lambda expression equivalents:
 | number | Lambda expression |
@@ -106,6 +106,6 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTM1OTM2MTMsMTYxMTQyODgxOSwtMT
-Y0MzkxMjU5NF19
+eyJoaXN0b3J5IjpbLTczNjI1NDA4NCwtMjAxMzU5MzYxMywxNj
+ExNDI4ODE5LC0xNjQzOTEyNTk0XX0=
 -->

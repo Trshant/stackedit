@@ -25,7 +25,7 @@ In the above function ( which is an expression ), the `λy` is the head.`x(yz)` 
 
 So now, the next question is, however does it actually do its computation? Whats the process followed to do the actual computation? Its simple and we all know it: **cut and paste**!  
 
-But before we dive into that, there is something else i should go into: **Church Numerals**. Church numerals are the encoded natural numbers ( encoded using chuch encoding ). We can define a church numeral as a higher-order function which takes a single argument function as an argument and returns another single argument function.
+But before we dive into that, there is something else I should go into: **Church Numerals**. Church numerals are the encoded natural numbers ( encoded using chuch encoding ). We can define a church numeral as a higher-order function which takes a single argument function as an argument and returns another single argument function.
 
 Lets see the numbers and their lambda expression equivalents:
 | number | Lambda expression |
@@ -106,5 +106,6 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMTQyODgxOSwtMTY0MzkxMjU5NF19
+eyJoaXN0b3J5IjpbLTIwMTM1OTM2MTMsMTYxMTQyODgxOSwtMT
+Y0MzkxMjU5NF19
 -->

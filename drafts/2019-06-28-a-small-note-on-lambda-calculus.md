@@ -96,17 +96,17 @@ Main References:
 
 
 Links I regularly went back to when I needed some gentle explanations ( when Wikipedia got too terse for me! ):  
-[&lambda; Calculus for dummies](http://bach.ai/lambda-calculus-for-absolute-dummies/): Amazingly well written note on Lambda Calculus.  
+[λC for dummies](http://bach.ai/lambda-calculus-for-absolute-dummies/): Amazingly well written note on λC.  
 [Stackoverflow answer for multiplication in lambda](https://math.stackexchange.com/a/595576)  
 
 
 Other Interesting Reads:
-[To remember lambda in poems](https://cstheory.stackexchange.com/a/36601)      
+[To understand  in poems](https://cstheory.stackexchange.com/a/36601)      
 [Class notes on &lambda; calculus](http://pages.cs.wisc.edu/~horwitz/CS704-NOTES/1.LAMBDA-CALCULUS.html) 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQ3NTA4ODQsLTIwMTM1OTM2MTMsMT
+eyJoaXN0b3J5IjpbLTEzMzA0Mzk3OTEsLTIwMTM1OTM2MTMsMT
 YxMTQyODgxOSwtMTY0MzkxMjU5NF19
 -->

@@ -97,7 +97,7 @@ Main References:
 
 Links I regularly went back to when I needed some gentle explanations ( when Wikipedia got too terse for me! ):  
 [λC for dummies](http://bach.ai/lambda-calculus-for-absolute-dummies/): Amazingly well written note on λC.  
-[Stackoverflow answer for multiplication in λC](https://math.stackexchange.com/a/595576)  
+[Stackoverflow answer for explanation of multiplication in λC](https://math.stackexchange.com/a/595576)  
 
 
 Other Interesting Reads:  
@@ -107,6 +107,6 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTEyNTg3MywtMjAxMzU5MzYxMywxNj
+eyJoaXN0b3J5IjpbLTgxODMwNjA2MywtMjAxMzU5MzYxMywxNj
 ExNDI4ODE5LDM4NTIzODM0N119
 -->

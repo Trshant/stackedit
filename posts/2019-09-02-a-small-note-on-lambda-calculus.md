@@ -23,7 +23,7 @@ It uses these 4 parts to write expressions. Let me illustrate this with an examp
 
 In the above function ( which is an expression ), the `λy` is the head.`x(yz)` is the body ( which is an expression ) and `ab` which is an argument ( also an expression ).   
 
-Lambda calculus resolves each expression using substitution.
+Lambda calculus resolves each expression using substitution, starting from the rightmost ( and innermost ) expression.
 
 But before we dive into that, there is something else I should go into. **Church Numerals**: Church numerals are the encoded natural numbers ( encoded using chuch encoding ). We can define a church numeral as a higher-order function which takes a single argument function as an argument and returns another single argument function.
 
@@ -107,6 +107,6 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/) and Notable and Vim.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzcxNzI1MDYsLTgxODMwNjA2MywtMj
-AxMzU5MzYxMywxNjExNDI4ODE5LDM4NTIzODM0N119
+eyJoaXN0b3J5IjpbLTc3NjE2MDc0NSwtODE4MzA2MDYzLC0yMD
+EzNTkzNjEzLDE2MTE0Mjg4MTksMzg1MjM4MzQ3XX0=
 -->

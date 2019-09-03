@@ -5,7 +5,6 @@ draft: false
 tags : [computation , ComputerScienceTheory , lambdaCalculus  ]  
 Description : "A short note on Lambda Calculus and Church Numerals"
 ---
-# Lambda Calculus and Church numerals
 
 Lambda Calculus ( called **&lambda;C** from now on  ) is something that every programmer reads and wonders about at a point of her career.  
 
@@ -116,5 +115,5 @@ Other Interesting Reads:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg1MjM4MzQ3XX0=
+eyJoaXN0b3J5IjpbMTQ0ODk5NzExMiwzODUyMzgzNDddfQ==
 -->

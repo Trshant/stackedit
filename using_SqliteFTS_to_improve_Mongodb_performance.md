@@ -3,14 +3,14 @@ MongoDB is a big part of our software architecture. A huge part of the magic tha
 Minutes to get results is not acceptable to me. So i slowly started to research options for Full Text Search (FTS). One of the first to be rejected was Elastic Search. Changes in the arcitecture and a starting RAM consumption for a little over 1GB was too much for my frugal taste. For the same reason of having starting overheads, I had to reject other solutions too. However, during my reasearch, i saw that sqlite kept coming up, was super dependable, had a well tested FTS extention, was available inbuilt in python and seemed a good option for building a small proof of concept to see how it performed. So i started to play around with it one evening and i was very happy with the results. However I wanted to test it a bit further to se where it broke ( rather, see where my process broke, sqlite is extremely well tested ) before i integrated it in the system. I found that sqliteFTS does not have a vey good way of handling any special characters ( [see this](https://stackoverflow.com/a/28996203) ). However, it was still the best fit for my work. Integrating SqliteFTS into the codebase was the work of a few hours. The speedup in search is very noticable.
 We do have drawbacks:
 1. Indexing the text happens during the startup and this takes some time.
-2. The simple tokenisation whic hthe fTS used by default limits the characters to `[A-Za-z0-0]`is not something i am happy with. I look to changing this in some time.
+2. The simple tokenisation whic hthe fTS used by default limits the characters to `[A-Za-z0-0]`is not something i am happy with. I look to changing this in the future.
 
-We have used the results of the sqlite search as an input in the 
+We have used the results of the sqlite search in the first stage of an aggregation pipeline in mongodb - This has resulted in an  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjY5MDkxODksNDkyMzI2MDAxLC0zND
-Q0NjUyOSwxOTk0OTg5NjA2LDE2ODE5OTI1OTgsMjA2NjIzMDI1
-OSwtNTIyNTA4OTkwLDE3MzEyODgzMTcsMzI2NTg4MzgsLTE5ND
-EyMDUyMDksLTM3MjEyNDE1MSwyMjU3OTA5MjYsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbMTQ1MTM4NzEzMSwtMTk2NjkwOTE4OSw0OT
+IzMjYwMDEsLTM0NDQ2NTI5LDE5OTQ5ODk2MDYsMTY4MTk5MjU5
+OCwyMDY2MjMwMjU5LC01MjI1MDg5OTAsMTczMTI4ODMxNywzMj
+Y1ODgzOCwtMTk0MTIwNTIwOSwtMzcyMTI0MTUxLDIyNTc5MDky
+Niw3MzA5OTgxMTZdfQ==
 -->

@@ -7,14 +7,14 @@ We do have drawbacks:
 1. Indexing the text happens during the startup and this takes some time.
 2. The simple tokenisation whic hthe fTS used by default limits the characters to `[A-Za-z0-0]`is not something i am happy with. I look to changing this in the future.
 
-All in all, I am satisfied with the results of adding sqlitefts to the system. As i pointed out it took minimal effort to get that done. There were no changesto the infrastructure
+All in all, I am satisfied with the results of adding sqlitefts to the system. As i pointed out it took minimal effort to get that done. There were no changes to the infrastructure. The speedup is remarkable. 
 
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzQ1NTU4MzMsLTE5NjY5MDkxODksND
-kyMzI2MDAxLC0zNDQ0NjUyOSwxOTk0OTg5NjA2LDE2ODE5OTI1
-OTgsMjA2NjIzMDI1OSwtNTIyNTA4OTkwLDE3MzEyODgzMTcsMz
-I2NTg4MzgsLTE5NDEyMDUyMDksLTM3MjEyNDE1MSwyMjU3OTA5
-MjYsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTE5NDM3MzY2MCwtMTk2NjkwOTE4OSw0OT
+IzMjYwMDEsLTM0NDQ2NTI5LDE5OTQ5ODk2MDYsMTY4MTk5MjU5
+OCwyMDY2MjMwMjU5LC01MjI1MDg5OTAsMTczMTI4ODMxNywzMj
+Y1ODgzOCwtMTk0MTIwNTIwOSwtMzcyMTI0MTUxLDIyNTc5MDky
+Niw3MzA5OTgxMTZdfQ==
 -->

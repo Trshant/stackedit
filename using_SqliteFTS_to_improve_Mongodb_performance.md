@@ -8,13 +8,11 @@ We do have drawbacks:
 2. The simple tokenisation whic hthe fTS used by default limits the characters to `[A-Za-z0-0]`is not something i am happy with. I look to changing this in the future.
 
 All in all, I am satisfied with the results of adding sqlitefts to the system. As i pointed out it took minimal effort to get that done. There were no changes to the infrastructure. The speedup is remarkable. 
-
- 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NDM3MzY2MCwtMTk2NjkwOTE4OSw0OT
-IzMjYwMDEsLTM0NDQ2NTI5LDE5OTQ5ODk2MDYsMTY4MTk5MjU5
-OCwyMDY2MjMwMjU5LC01MjI1MDg5OTAsMTczMTI4ODMxNywzMj
-Y1ODgzOCwtMTk0MTIwNTIwOSwtMzcyMTI0MTUxLDIyNTc5MDky
-Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTY2NDA0ODA1MiwxMTk0MzczNjYwLC0xOT
+Y2OTA5MTg5LDQ5MjMyNjAwMSwtMzQ0NDY1MjksMTk5NDk4OTYw
+NiwxNjgxOTkyNTk4LDIwNjYyMzAyNTksLTUyMjUwODk5MCwxNz
+MxMjg4MzE3LDMyNjU4ODM4LC0xOTQxMjA1MjA5LC0zNzIxMjQx
+NTEsMjI1NzkwOTI2LDczMDk5ODExNl19
 -->
